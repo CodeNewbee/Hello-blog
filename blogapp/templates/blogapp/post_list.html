@@ -5,6 +5,14 @@
 </head>
 
 <body>
+
   <h1>Ma first blog headin</h1>
-  <p>more comin soon</p>
+
+  {% for post in posts %}
+    <div>
+      <p>published: {{ post.published_date }}</p>
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.text|linebreaksbr }}
+    </div>
+  {% endfor %}
 </body>
