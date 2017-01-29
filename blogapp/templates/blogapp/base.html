@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<head>
+  <title>Hello blog</title>
+  <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/blogapp.css' %}">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="{% static 'js/blogapp.js' %}"></script>
+</head>
+
+<body>
+  <div class="container nav-bar">
+    <h1 id="heading"><a href="/">Ma first blog headin</a></h1>
+  </div>
+  <div class="content container">
+    <div class="row">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+</body>

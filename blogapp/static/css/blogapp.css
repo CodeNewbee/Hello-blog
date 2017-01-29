@@ -1,0 +1,10 @@
+.nav-bar {
+  font-family: 'Lobster';
+  background-color: #475183;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+#heading a {
+    color: #8ab0ad;
+}
